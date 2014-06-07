@@ -1,0 +1,233 @@
+/*
+Responsive 996px grid system ~ Style CSS.
+Copyright 2013, Josh Cope
+*/
+
+/* =============================================================================
+   Site Styles
+   ========================================================================== */
+
+
+
+body,html {
+	background-image:url(../images/skulls.png);
+	margin: 0;
+	padding: 0;
+
+}
+ 
+ 
+
+
+
+footer
+{
+	border:5px #CBCC99 groove;
+	background-color: rgb(119,120,90);
+	width:85%;
+	position: static;
+}
+
+a
+{
+display: inline-block;
+width:200px;
+height:141px;
+position:relative;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+}
+h6
+{
+	color:rgb(0,0,0)
+}
+
+/* =============================================================================
+   Page Styles
+   ========================================================================== */
+ 
+logon
+ {
+	 float:left:
+	 background-color:rgb(176,147,68);
+	 color:rgb(203,204,153);
+ }
+  
+
+	 
+article
+{
+ 	text-align: inherit;
+	display:inline;
+	background-color:rgb(180,172,150);
+}
+
+#list,ol
+{ 
+background-color:rgb(180,172,151);
+font-size:1.5em;
+text-decoration:underline;
+font-family:font-family: unifrakturcook, blackletter;
+  	
+
+}
+
+
+aside
+{
+	text-align: left;
+	border:5px #993 groove;
+	background-color:rgb(180,172,150);
+	border-radius:10px 0px 10px 0px;
+	
+}
+ 	
+
+header
+{
+	background-color:rgb(51,51,204);
+	position: inherit;
+	margin:auto;
+	alignment-adjust:central;
+	
+}
+#link li 
+{  
+	text-align:center;
+	display:inline;
+	background-color:rgb(180,172,150)
+}
+h1,h2
+{ 
+	text-size: 1.0em;
+	text-align:center;
+	font-family:font-family: 'Griffy', cursive;
+}
+
+p
+{
+	color: rgb(0,0,51);
+	text-shadow: inherit;
+	font-size: medium;
+	padding: 2px 2px 2px 2px;
+}
+
+#monit
+
+ { padding:5px; 
+ 	font-size:1.5;
+	background-color: rgb(229,178,105);	
+	 
+ }
+ #hist
+ {
+	 border: 3px inset rgb(50,51,204);
+	 background:rgb(239,205,147); 
+ }
+ 
+ /*================== forms =======================================*/
+ form    {
+background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+margin:auto;
+position:relative;
+width:400px;
+height:450px;
+font-family: Tahoma, Geneva, sans-serif;
+font-size: 14px;
+font-style: italic;
+line-height: 24px;
+font-weight: bold;
+color: #09C;
+text-decoration: none;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+padding:10px;
+border: 1px solid #999;
+border: inset 1px solid #333;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+input    {
+width:375px;
+display:block;
+border: 1px solid #999;
+height: 25px;
+-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+input.button {
+width:100px;
+position:absolute;
+right:20px;
+bottom:20px;
+background:#09C;
+color:#fff;
+font-family: Tahoma, Geneva, sans-serif;
+height:30px;
+-webkit-border-radius: 15px;
+-moz-border-radius: 15px;
+border-radius: 15px;
+border: 1p solid #999;
+}
+input.button:hover {
+background:#fff;
+color:#09C;
+}
+textarea:focus, input:focus {
+border: 1px solid #09C;
+}
+/*======================================================================
+	Gallery
+=====================================================================*/ 
+
+
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Tablet Portrait size to Base 996px */
+@media only screen and (min-width: 768px) and (max-width: 995px) {}
+
+/* All Mobile Sizes */
+@media only screen and (max-width: 767px) {}
+
+/* Mobile Landscape Size to Tablet Portrait */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	{
+		border:none;
+	
+	}
+
+/* Mobile Portrait Size to Mobile Landscape Size */
+@media only screen and (max-width: 479px) {
+	{
+		background:none;
+		border:none;
+	
+	
+	}
+
+
+/* =============================================================================
+   Font-Face
+   ========================================================================== */
+/* This is the proper syntax for an @font-face file*/
+ @font-face {
+font-family: 'FontName';
+src: url('../fonts/FontName.eot');
+src: url('../fonts/FontName.eot?iefix') format('embedded-opentype'),
+url('../fonts/FontName.woff') format('woff'),
+url('../fonts/FontName.ttf') format('truetype'),
+url('../fonts/FontName.svg#FontName') format('svg');
+font-weight: normal;
+font-style: normal; }
+*/
+.no-js body .contaner .grid_6 h1 {
+	color: rgb(0,0,51);
+}

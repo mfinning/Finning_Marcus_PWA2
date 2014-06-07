@@ -22,25 +22,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<!-- CSS concatenated and minified via ant build script-->
-	<link rel="stylesheet" href="css/style.css?v=1">
+	<link rel="stylesheet" href="css/style.css">
 	<!-- end CSS-->
 	
 </head>
 
 <body>
-		<h1>The photo Box</h1>
-        <!-- the navagation of the web sight not actvie yet-->
-<nav>
-	<ul>
-    	<li><a>Home</a></li>
-        <li><a>Join</a></li>
-        <li><a>about</a></li>
-    </ul>
-</nav>
+
+
+  
+
 <!--- log on form with submit buttion and option to save log on info and or stay log on for 24 hours -->
-<section class="logon"> 
-<header> 
- <article>
+<div class="contaner">
+<h1>The photo Box</h1>
+<header class="logon">
+
+ <article class="logon">
+ 
 	<form>
 	 <form name="input" action="demo_form_action.asp" method="get">
 		Username: <input type="text" name="user">
@@ -48,9 +46,12 @@
         <input type="submit" value="Submit"> 
 	 	<input type="checkbox" name="log on" value="save">Save<br>
 		<input type="checkbox" name="keep log on" value="keep loged on">Saty login for 24 hour<br>
-	</form> 
+	</form>
+    <div class="logo">
+<img src="images/The-photoboxlogo.jpg" alt="logo" name="logo" width="206" height="200" id="logo">
+</div> 
   </article>
- </header>
+</header>
 </section>
 <!-- the join section give you a littil history about us resion why to join the sight with a join us buttion to got the registration page-->
 
@@ -60,13 +61,12 @@
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porta odio non turpis laoreet, id consectetur sem faucibus. Fusce a tortor lacinia elit aliquet volutpat at id magna. Ut luctus tortor lectus, vitae dignissim tellus lobortis vehicula. Nullam adipiscing urna semper imperdiet mattis. Integer sollicitudin tempor ipsum, a venenatis purus mollis in. Sed sed nulla ultricies mauris consequat ullamcorper. Nulla facilisi. Morbi placerat condimentum nisi eget ultricies. Pellentesque semper velit et massa cursus tincidunt. 
 </p>
-<p>
-Morbi cursus nec erat quis iaculis. Aliquam laoreet tortor augue, vitae varius ante vulputate sit amet. Vivamus vitae lacinia odio, at aliquam elit. Nullam quis nisi vel lectus pulvinar sagittis. Maecenas id condimentum felis. Sed sit amet elit sit amet massa vestibulum tristique. Aenean elementum lectus dapibus dictum congue. Nullam pharetra sem non mattis lacinia. Maecenas ac nisl consectetur, vulputate purus in, aliquam diam. Nunc quis ante quis turpis ullamcorper pulvinar vitae et nulla. Donec vulputate, lectus aliquam scelerisque posuere, felis libero gravida dolor, eu viverra mauris augue ac risus. 
-</p>
 <!-- join buttion -->
 <input type="submit" value="Join today">
 </section>
-
+</div>
+<footer id="footer" style="background-color:#06F;clear:both;text-align:center;">
+		&copy; ProDesgin</footer>
 
 
 
