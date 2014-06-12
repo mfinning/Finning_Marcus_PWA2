@@ -6,9 +6,39 @@ a { color: #bf5572c; }
  
 a:hover { color:#000; }
 
-.faq_container{
+.faq_container {
 	 margin: 20px 0px 0px 20px;
 	 padding: 0px 0px 5px 0px;
 	 width: 700px;
-	background: url(../images/corkboaard_tile.jpg) 0px 0px
+	 background: url(../images/corkboard_tile.jpg) 0px 0px;
+	
 }
+
+.faq {
+	margin: 0px 15px 35px 15px;
+	padding:25px 15px 15px 70px;
+	position:relative;
+	background: #FFF url(../images/note_top.jpg) no-repeat 0px 0px;
+	}
+.faq_question {
+	margin: 0px;
+	padding: 0px 0px 5px 0px;
+	display:inline-block;
+	cursor: help;
+	font-weight:bold;
+	color:#1f4f71;
+}
+.faq_answer_container {
+	height: 0px;
+	overflow:hidden;
+	padding: 0px;
+	color:#BF572C;
+	}
+
+.faq_answer {
+	margin: 0px;
+	padding: opx;
+	color:#BF572C;
+	font-weight: normal
+	
+	}
