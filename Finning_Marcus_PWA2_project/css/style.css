@@ -1,32 +1,39 @@
-/*
-Responsive 996px grid system ~ Style CSS.
-Copyright 2013, Josh Cope
-*/
-
 /* =============================================================================
    Site Styles
    ========================================================================== */
 
 
 
-body,html {
-	background-image:url(../images/skulls.png);
-	margin: 0;
-	padding: 0;
-
-}
- 
- 
-
-
-
-footer
+body ,.logon {
+	margin-bottom: 60px;
+	background-image: url(../images/skulls.png);
+	height: 100%;
+	width: 100%;
+	left: auto;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	}
+	
+.contaner
 {
-	border:5px #CBCC99 groove;
-	background-color: rgb(119,120,90);
-	width:85%;
+	background: url(../images/photography.png);
+	margin: 15px;
+	padding: 10px;
+	height: 95%;
+	width: 94%;
+	left: 45px;
+	top: 50px;
+	right: 45px;
+	bottom: 50px;
+	clear: both;
+	float: left;
 	position: static;
+	
 }
+ 
+
+
 
 a
 {
@@ -43,18 +50,19 @@ h6
 	color:rgb(0,0,0)
 }
 
+footer
+{
+	border: 5px #CBCC99 groove;
+	background-color: rgb(119,120,90);
+	width: 85%;
+	margin: auto;
+	position: relative;
+	padding: 10px;
+}
 /* =============================================================================
    Page Styles
    ========================================================================== */
- 
-logon
- {
-	 float:left:
-	 background-color:rgb(176,147,68);
-	 color:rgb(203,204,153);
- }
-  
-
+   
 	 
 article
 {
@@ -84,14 +92,7 @@ aside
 }
  	
 
-header
-{
-	background-color:rgb(51,51,204);
-	position: inherit;
-	margin:auto;
-	alignment-adjust:central;
-	
-}
+
 #link li 
 {  
 	text-align:center;
@@ -127,60 +128,40 @@ p
  }
  
  /*================== forms =======================================*/
- form    {
-background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
-background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
-margin:auto;
-position:relative;
-width:400px;
-height:450px;
-font-family: Tahoma, Geneva, sans-serif;
-font-size: 14px;
-font-style: italic;
-line-height: 24px;
-font-weight: bold;
-color: #09C;
-text-decoration: none;
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
-padding:10px;
-border: 1px solid #999;
-border: inset 1px solid #333;
--webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
--moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+ .logon
+{
+	position: static;
+	z-index: -1;
+	height: 100px;
+	width: 200px;
+	top: 15px;
+	right: 15px;
+	padding: 15px;
+	float: right;
+	border: medium solid #0033FF;
+	visibility: visible;
+	margin: 15px;
+	}
+.logout
+{
+	background: #CCCC66;	
 }
-input    {
-width:375px;
-display:block;
-border: 1px solid #999;
-height: 25px;
--webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
--moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+
+.regform
+{
+	padding: 10px;
+	height: 200px;
+	width: 525px;
+	border: 5px solid #0000CC;
+	background: url(../images/techstyle.jpg);
+	position: static;
+	left: 100px;
+	top: inherit;
+	right: 100px;
+	bottom: auto;
+	float: right;	
 }
-input.button {
-width:100px;
-position:absolute;
-right:20px;
-bottom:20px;
-background:#09C;
-color:#fff;
-font-family: Tahoma, Geneva, sans-serif;
-height:30px;
--webkit-border-radius: 15px;
--moz-border-radius: 15px;
-border-radius: 15px;
-border: 1p solid #999;
-}
-input.button:hover {
-background:#fff;
-color:#09C;
-}
-textarea:focus, input:focus {
-border: 1px solid #09C;
-}
+
 /*======================================================================
 	Gallery
 =====================================================================*/ 
@@ -191,43 +172,6 @@ border: 1px solid #09C;
    Media Queries
    ========================================================================== */
 
-/* Tablet Portrait size to Base 996px */
-@media only screen and (min-width: 768px) and (max-width: 995px) {}
-
-/* All Mobile Sizes */
-@media only screen and (max-width: 767px) {}
-
-/* Mobile Landscape Size to Tablet Portrait */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-	{
-		border:none;
-	
-	}
-
-/* Mobile Portrait Size to Mobile Landscape Size */
-@media only screen and (max-width: 479px) {
-	{
-		background:none;
-		border:none;
-	
-	
-	}
-
-
 /* =============================================================================
    Font-Face
    ========================================================================== */
-/* This is the proper syntax for an @font-face file*/
- @font-face {
-font-family: 'FontName';
-src: url('../fonts/FontName.eot');
-src: url('../fonts/FontName.eot?iefix') format('embedded-opentype'),
-url('../fonts/FontName.woff') format('woff'),
-url('../fonts/FontName.ttf') format('truetype'),
-url('../fonts/FontName.svg#FontName') format('svg');
-font-weight: normal;
-font-style: normal; }
-*/
-.no-js body .contaner .grid_6 h1 {
-	color: rgb(0,0,51);
-}
