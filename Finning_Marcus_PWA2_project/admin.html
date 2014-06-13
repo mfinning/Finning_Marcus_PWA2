@@ -29,44 +29,50 @@
 </head>
 
 <body>
-<div class="contaner">
-	 
+<div class="container">
 <header><img src="images/The-photoboxlogo.jpg" alt="logo">
-<div class="logout">
+<div="logout">
+<button type="button" autofocus>Dashboard</button>
 <button type="button" autofocus>Log Out</button>
-</div>
+</header>
+<br>
+<br>
 		<h1> The Photo Box </h1>
 		<h2> Welcome to photobox admin page</h2>
-</header>
 
-
-
-	<div id="container" style="width:975px">
 		<!-- admin box -->
-	<div id="header" style="background-color:#03F;">
-	<h1 style="margin-bottom:0;">The photo Box Admin box</h1></div>
+        <div class="welcome">
+        <p><a href="#" class="modalClick">Add +</a>
+	
+	<h1>The photo Box Admin box</h1>
 		<!-- admin box menue selection -->
-	<div id="menu" style="background-color:#06F;height:200px;width:100px;float:left;">
-		<b>Menu</b><br>
-		Account<br>
-		History<br>
-		Gallery</div>
-
-	<div id="content" style="background-color:#999;height:200px;width:400px;float:left;">
-	Content goes here</div>
+	<div id="overlay">
+    <div id="modal">
+    	<span class="close">X</span>
+	<h3 class="header">Add Project</h3>
+    <div id="AddForm">
+    	<label> Project Name:</label>
+        	<input name="projectName"type="text" id="projectName"/>
+    <br>
+    <label> Project Description: </label>
+    	<input name="projectDescription" type="text" id="projectDescription"/><br>
+        	<label> Due Date: </label>
+        <input name="DueDate" type="text" id="projectduedate"/><br>
+        <label for="status">
+	 
+	</div>
 </div>
 <footer id="footer" style="background-color:#06F;clear:both;text-align:center;">
 		&copy; ProDesgin</div>
 </footer>
-</div>
+
 	
 	
 	
 	<!-- jquery -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<!-- plugins -->
-
-	
+    
 	<!-- main -->
 	<script type="text/javascript" src="js/main.js"></script>
   

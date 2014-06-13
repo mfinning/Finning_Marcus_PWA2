@@ -163,8 +163,38 @@ p
 }
 
 /*======================================================================
-	Gallery
+	mobal
 =====================================================================*/ 
+#modal
+{
+	width: 350;
+	background:#0066FF;
+	box-shadow: 0 0 10px #000;
+	border-radius: 10px;
+	overflow:hidden;
+	position:relative;
+	top: 50%;
+	left:50%;
+	margin-top:-200px;
+	margin-left:-200px;
+	z-index:1001;
+	display:none;
+}
+#modal .header
+{
+	background:#77785A;
+	color:#fff;
+	padding: 10px;
+	
+}
+#moda p
+{
+	padding: 10px;
+}
+#moda .close
+{
+	
+}
 
 
 
