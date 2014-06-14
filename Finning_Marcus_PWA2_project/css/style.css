@@ -187,14 +187,33 @@ p
 	padding: 10px;
 	
 }
-#moda p
+#modal p
 {
 	padding: 10px;
 }
-#moda .close
+#modal .close
 {
+	position:absolute;
+	right:5px;
+	top:5px;
+	font-size:16px;
+	font-weight:bold;
+	padding: 5px 10px;
+	border: 1px solid #ccc;
+	cursor:pointer;
+	background-color: #F00;
 	
 }
+form
+{
+	padding: 10px;
+}
+form.input
+{
+	padding: 10px;
+}
+
+
 
 
 

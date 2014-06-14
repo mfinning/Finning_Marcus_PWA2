@@ -1,6 +1,6 @@
 /*  
-	Your Project Title
-	Author: You
+	The Photo Box
+	Author: Finning,Marcus
 */
 
 (function($){
@@ -48,7 +48,34 @@
 	==================================== END EVENTS 
 	===============================================
 	*/
+	/*  add */
+	$('.modalClick').on('click', function(event){
+		event.preventDefault();
+		$('#overlay')
+		 .fadeIn()
+		 .find('#modal')
+		 .fadeIn();
 		
+		});
+		
+		$('.close').on('click', function(event){
+		event.preventDefault();
+		$('#overlay')
+		.fadeOut()
+		.find('#modal')
+		.fadeOut();
+		
+		});
+		
+		
+	/* status fad*/	
+	$('.mystatus').mouseover(function(){
+		$(this).fadeTo(100, .3);
+		});
+		
+		'.mystatus').mouseover(function(){
+		$(this).fadeTo(100, 1);
+		});
 		
 
 	
