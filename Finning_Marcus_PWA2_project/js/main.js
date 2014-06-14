@@ -3,7 +3,7 @@
 	Author: Finning,Marcus
 */
 
-(function($){
+(function(){
 	
 	
 	/*
