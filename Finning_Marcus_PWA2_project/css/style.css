@@ -164,7 +164,19 @@ p
 
 /*======================================================================
 	mobal
-=====================================================================*/ 
+=====================================================================*/
+#overlay
+{
+	width: 100%;
+	height:100%;
+	background: rgba(0,0,0,.5);
+	position:absolute;
+	top: 0;
+	left: 0;
+	z-index:1000;
+	display:none;
+} 
+
 #modal
 {
 	width: 350;
@@ -180,6 +192,7 @@ p
 	z-index:1001;
 	display:none;
 }
+
 #modal .header
 {
 	background:#77785A;
@@ -187,10 +200,12 @@ p
 	padding: 10px;
 	
 }
+
 #modal p
 {
 	padding: 10px;
 }
+
 #modal .close
 {
 	position:absolute;
@@ -205,13 +220,33 @@ p
 	
 }
 form
+
 {
 	padding: 10px;
 }
+
 form.input
+
 {
 	padding: 10px;
 }
+
+/*  project page */
+header
+{
+	width:960px;
+}
+
+.userid{
+	width: 400px;
+	float:left;
+	}
+
+.logoutbox{
+	width: 400px;
+	float: right;
+	}
+	
 
 
 

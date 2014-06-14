@@ -73,13 +73,13 @@
 		$(this).fadeTo(100, .3);
 		});
 		
-		'.mystatus').mouseover(function(){
+		$('.mystatus').mouseover(function(){
 		$(this).fadeTo(100, 1);
 		});
 		
 
 	
-})(jQuery); // end private scope
+}); // end private scope
 
 
 
