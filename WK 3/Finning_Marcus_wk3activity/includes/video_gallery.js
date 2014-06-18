@@ -3,6 +3,18 @@
 // for lynda.com
 
 $(document).ready(function() {
+	$('a.videoLink').hover(
+		function(){
+			var captionPosition = 85-$(this).children('.caption').height();
+			var iconPosition = captionPosition - 32;
+			$(this).children('.caption').animate({top:captionPosition +'px'},250);
+			$(this).childern('img.play').animate({top:captionPosition + 'px',opacity:1},250);
+			},
+		function(){
+			$(this).children('.caption').animate({top:'116px'},250);
+			$(this).childern('img.play').animate({top:'25px',opacity:.5},250);
+			}
+	);
 
 	// Set up link thumbnails
 	$('a.videoLink').each(function(){
