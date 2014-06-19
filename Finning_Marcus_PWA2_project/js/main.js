@@ -79,7 +79,7 @@
 		
 
 	
-}); // end private scope
+})(jQuery) // end private scope
 
 
 

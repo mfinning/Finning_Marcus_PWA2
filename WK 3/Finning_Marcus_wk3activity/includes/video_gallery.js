@@ -1,7 +1,5 @@
 // JavaScript Document
-// Written by Chris Converse
-// for lynda.com
-
+// Written by MarcusFinning
 $(document).ready(function() {
 	$('a.videoLink').hover(
 		function(){
