@@ -4,25 +4,35 @@
 */
 
 (function(){
-	
+	/*=============logon==========*/
+	$('#logIn').click(function(){
+		var user = $('#user').val();
+		var password = $('#pwd').val();
+		console.log("log on notifaction");
+		
 	
 	/*
-	===============================================
-	========================= APPLICATION FUNCTIONS	
+	
+	========================= database access  ============
 	*/
-	
-	
-	var checkLoginState = function(){
-		$.ajax({
-			url: 'xhr/check_login.php',
-			type: 'get',
+	$.ajax({
+			url: 'xhr/login.php',
+			type: 'post',
 			dataType: 'json',
+			data: {
+				username:user,
+				password:pass
+			},
 			success: function(response){
-				// if user, loadApp()
-				// if error, loadLanding()
-			}
-		});
-	};
+				console.log("test user");
+				if (response.error);{
+					alert(response.error);
+				}else{
+				window.location.assign('admin.html')
+			};
+		}
+	});
+});
 	
 	
 
