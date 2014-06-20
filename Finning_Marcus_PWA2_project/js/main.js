@@ -1,64 +1,48 @@
-/*  
-	The Photo Box
-	Author: Finning,Marcus
-*/
+  
+//	The Photo Box
+//	Author: Finning,Marcus
 
-(function(){
-	/*=============logon==========*/
-	$('#logIn').click(function(){
+
+(function($){
+	
+	
+/*========================logon======================*/
+	$('#loginForm').click(function(){
 		var user = $('#user').val();
-		var password = $('#pwd').val();
-		console.log("log on notifaction");
-		
-	
-	/*
-	
-	========================= database access  ============
-	*/
-	$.ajax({
-			url: 'xhr/login.php',
-			type: 'post',
-			dataType: 'json',
+		var pass = $('#pass').val();
+		console.log("this is working");
+		$.ajax({
+			url:'xhr/login.php',
+			type:'POST',
+			dataType:"json",
 			data: {
-				username:user,
-				password:pass
-			},
-			success: function(response){
-				console.log("test user");
-				if (response.error);{
-					alert(response.error);
-				}else{
-				window.location.assign('admin.html')
-			};
-		}
-	});
-});
+				username: user,
+				password: pass
+				
+				},
+				success: function(response){
+					console.log("test user");
+					if(response.error){
+						alert(response.error);
+					}else{
+						window.location.assign('admin.html')
+					};
+				}
+			});
+		});
+
+
+
+
+/*====================== logout =========================*/	
+	
+
+	
+		
 	
 	
 
-	// 	============================================
-	//	SETUP FOR INIT
-		
-	var init = function(){
-	
-		checkLoginState();
-	};
-	
-	
-	init();
-	
-		
-	/*
-	===============================================
-	======================================== EVENTS	
-	*/
-	
-	
-	/*	
-	==================================== END EVENTS 
-	===============================================
-	*/
-	/*  add */
+/* ================== add project mobal ==================*/
 	$('.modalClick').on('click', function(event){
 		event.preventDefault();
 		$('#overlay')
