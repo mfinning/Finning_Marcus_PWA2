@@ -1,16 +1,37 @@
 // JavaScript Document
 // Written by MarcusFinning
+
+var thumbnailPosition = 0;
+
+function animateThumbnail(){
+	if(window.thumbnailPosition < 800){
+		window.thumbnailPosition +=200;
+		}else{
+			window.thumbnailPosition = 0;
+			}
+	var newPosition = window.thumbnailPosition*-1;
+	$('p.debug').html(newPosition);
+	$('a.videoLink.hover').css('background-position',''+newPosition+'px 0px');
+	}
+
+
+
 $(document).ready(function() {
+	
+	setInterval(animateThumbnail,500);
+	
 	$('a.videoLink').hover(
 		function(){
 			var captionPosition = 85-$(this).children('.caption').height();
 			var iconPosition = captionPosition - 32;
 			$(this).children('.caption').animate({top:captionPosition +'px'},250);
 			$(this).childern('img.play').animate({top:captionPosition + 'px',opacity:1},250);
+			$(this).addClass('hover');
 			},
 		function(){
 			$(this).children('.caption').animate({top:'116px'},250);
-			$(this).childern('img.play').animate({top:'25px',opacity:.5},250);
+			$(this).children('img.play').animate({top:'25px',opacity:.5},250);
+			$(this).removeClass('hover');
 			}
 	);
 
