@@ -25,7 +25,7 @@ $(document).ready(function() {
 			var captionPosition = 85-$(this).children('.caption').height();
 			var iconPosition = captionPosition - 32;
 			$(this).children('.caption').animate({top:captionPosition +'px'},250);
-			$(this).childern('img.play').animate({top:captionPosition + 'px',opacity:1},250);
+			$(this).children('img.play').animate({top:captionPosition + 'px',opacity:1},250);
 			$(this).addClass('hover');
 			},
 		function(){
