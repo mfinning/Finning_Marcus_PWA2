@@ -36,13 +36,20 @@
 
 /*====================== logout =========================*/	
 	
+$('#logOut').click(function(e){
+	e.preventDefault;
+	$.get('xhr/logout.php', function(){
+		window.location.assign('index.html')
+	})
+});
+
+
 
 	
-		
-	
 	
 
-/* ================== add project mobal ==================*/
+//================== add project mobal ==================//
+	
 	$('.modalClick').on('click', function(event){
 		event.preventDefault();
 		$('#overlay')
@@ -70,6 +77,36 @@
 		$('.mystatus').mouseover(function(){
 		$(this).fadeTo(100, 1);
 		});
+		
+		/*================== registration form ===============*/
+	
+	$('#register).on('click', function(){
+		var firstname= $('#firstName').val(),
+			lastname= $('#last').val(),
+			username=$('#user').val(),
+			email=$('#email').val(),
+			password=$('#pass').val();
+			
+		$ajax({
+			url:'xhr/register.php',
+			type: 'post'
+			dataType: 'json',
+			data:{
+				firstname: firstname,
+				lastname: lastname,
+				username: username,
+				email: email,
+				password: password
+			},
+			
+			Success: function(response){
+				if(response.error){
+					alert(response.error);
+				}else{
+					window.location.assign('admim.html');
+				}
+			});
+		};
 		
 
 	

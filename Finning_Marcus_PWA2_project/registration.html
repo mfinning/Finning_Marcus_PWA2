@@ -50,24 +50,29 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel consequat ip
 
 <h1>Registration :</h1>
 <label>
-<span>First Name</span><input id="name" type="text" name="name" />
+<span>First Name</span><input id="firstName" type="text" name="name" />
 </label>
 <label>
-<span>Last Name</span><input id="name" type="text" name="name" />
-</label>
-
-<label>
-<span>Username</span><input id="email" type="text" name="email" />
+<span>Last Name</span><input id="last" type="text" name="last" />
 </label>
 
 <label>
-<span>Password</span><input id="subject" type="text" name="subject" />
+<span>Username</span><input id="user" type="text" name="user" />
+</label>
+
+<label>
+<span>Password</span><input id="pass" type="text" name="pass" />
+</label>
+<label>
+<span>Confirm Password</span><input id="cpass" type="text" name="cpass" />
 </label>
 <label>
 <span>Email Address</span><input id="email" type="text" name="email" />
 </label>
 </label>
-<input type="button" value="Join us" />
+<input type="checkbox" required>
+<p> I agree to the<a href="#">terms</a>of The Photo Box</p>
+<input type="button"  id="register" value="Join us" />
 </form>
 	</div> 
 </div>
@@ -80,7 +85,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel consequat ip
 	
 	
 	<!-- jquery -->
-<script src="js/custom.js"></script>    
+    
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<!-- plugins -->
 
