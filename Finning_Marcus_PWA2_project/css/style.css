@@ -1,0 +1,129 @@
+/* =============================================================================
+   Site Styles
+   ========================================================================== */
+
+
+
+body ,.logon {
+	margin-bottom: 60px;
+	height: 100%;
+	width: 100%;
+	left: auto;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	}
+	
+.contaner
+{
+	
+	margin: 15px;
+	padding: 10px;
+	height: 95%;
+	width: 94%;
+	left: 45px;
+	top: 50px;
+	right: 45px;
+	bottom: 50px;
+	clear: both;
+	float: left;
+	position: static;
+	
+}
+ 
+
+
+
+a
+{
+display: inline-block;
+width:200px;
+height:141px;
+position:relative;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+
+footer
+{
+	
+	width: 85%;
+	margin: auto;
+	position: relative;
+	padding: 10px;
+}
+/* =============================================================================
+   Page Styles
+   ========================================================================== */
+   
+	 
+article
+{
+ 	text-align: inherit;
+	display:inline;
+	
+}
+
+#list,ol
+{ 
+
+font-size:1.5em;
+text-decoration:underline;
+
+  	
+
+}
+
+
+aside
+{
+	text-align: left;
+	border:5px #993 groove;
+	border-radius:10px 0px 10px 0px;
+	
+}
+ 	
+
+
+#link li 
+{  
+	text-align:center;
+	display:inline;
+	
+}
+h1,h2
+{ 
+	text-size: 1.0em;
+	text-align:center;
+	font-family:font-family: 'Griffy', cursive;
+}
+
+
+{
+	color: rgb(0,0,51);
+	text-shadow: inherit;
+	font-size: medium;
+	padding: 2px 2px 2px 2px;
+}
+
+
+	 
+ 
+ 
+ 
+ /*================== forms =======================================*/
+ 
+/*======================================================================
+	mobal
+=====================================================================*/
+
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+/* =============================================================================
+   Font-Face
+   ========================================================================== */
