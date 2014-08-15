@@ -211,7 +211,25 @@ input[type=radio]:checked + img{
 	color: #fff;
 	font-size:12px arial;
 	}
+/*=============== admins dash==============================*/
+#tabs {
+	background-color:#33F;
+	width:600px;
+	height:150px;
+	padding:20px;
+	}
 
+#tabs-nav{
+	width:600px;
+	height:75px;
+	padding:20px;
+	background-color:#03f;
+	text-decoration:none;
+	list-style-type:none;
+	}
+#tabs-nav li {
+	display: inline;
+	}
 
 
 /* =============================================================================
