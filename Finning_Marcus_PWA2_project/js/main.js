@@ -55,7 +55,7 @@
 		$(this).data('tipText', title).removeAttr('title');
 		$('<p class="tooltip"></p')
 		.text(title)
-		.append('body')
+		.appendTo('body')
 		.fadeIn('slow');
 	}, function(){
 		//out hover code

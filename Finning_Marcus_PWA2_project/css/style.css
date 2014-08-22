@@ -5,6 +5,8 @@
 
 
 body ,.logon {
+	
+	background-image:url(../images/rockywall_@2X.png);
 	margin-bottom: 60px;
 	height: 100%;
 	width: 100%;
@@ -16,7 +18,7 @@ body ,.logon {
 	
 .contaner
 {
-	
+	background-color: #f2e1c2;
 	margin: 15px;
 	padding: 10px;
 	height: 95%;
@@ -48,10 +50,10 @@ box-sizing:border-box;
 
 footer
 {
-	
-	width: 85%;
-	margin: auto;
-	position: relative;
+	background-color:#3b478c;
+	width: 100px;
+	margin:auto;
+	position:relative;
 	padding: 10px;
 }
 /* =============================================================================
