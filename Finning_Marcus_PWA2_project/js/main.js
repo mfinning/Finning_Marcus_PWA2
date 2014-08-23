@@ -128,11 +128,12 @@
 							);
 						};
 					$('.deletebtn').on('click',function(e){
+						var delete_correct_id= $(this).parent().find(".projectid").val();
 						console.log('test');
 						$.ajax({
 							url:'xhr/delete_project.php',
 							data: {
-								projectID: result.id
+								projectID: delete_correct_ID
 							},
 							type:'POST',
 							dataType:'json',
