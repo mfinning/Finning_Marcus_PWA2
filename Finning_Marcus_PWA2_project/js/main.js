@@ -182,6 +182,11 @@
 		.css({ top: mousey, left: mousex})
 	});
 	
+	/*============== admin button ============================================*/
+	    $('.dashBoard').on('click',function(e){
+		e.preventDefault();
+		windows.location.assign('admin.html');
+	
 	/*======================== tab according function ========================*/
 	
 	
