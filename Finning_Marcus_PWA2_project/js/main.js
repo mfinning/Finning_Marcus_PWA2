@@ -128,12 +128,11 @@
 							);
 						};
 					$('.deletebtn').on('click',function(e){
-						var delete_correct_id= $(this).parent().find(".projectid").val();
 						console.log('test');
 						$.ajax({
 							url:'xhr/delete_project.php',
 							data: {
-								projectID: delete_correct_ID
+								
 							},
 							type:'POST',
 							dataType:'json',
@@ -185,8 +184,8 @@
 	/*============== admin button ============================================*/
 	    $('.dashBoard').on('click',function(e){
 		e.preventDefault();
-		windows.location.assign('admin.html');
-	
+		window.location.assign('admin.html');
+		});
 	/*======================== tab according function ========================*/
 	
 	
@@ -206,28 +205,28 @@
 	/*============= project buttion ==============*/
 	$('.innercavebtn').on('click',function(e){
 		e.preventDefault();
-		windows.location.assign('projects.html');
+		window.location.assign('projects.html');
 	
 	});
 	
 	/*============= task button ===========*/
 	$('.cavetaskbtn').on('click',function(e){
 		e.preventDefault();
-		windows.location.assign('projects.html');
+		window.location.assign('projects.html');
 		
 	});
 	
 	/*============== user button ============*/
 	$('.caveuserbtn').on('click',function(e){
 		e.preventDefault();
-		windows.location.assign('admin.html');
+		window.location.assign('admin.html');
 		
 	});
 	
 	/*========= registration page button ==========*/
 	$('.regBtn').on('click',function(e){
 		e.preventDefault();
-		windows.location.assign('registration.html');
+		window.location.assign('registration.html');
 	});
 	 /*============= dynamic name ===========*/
 	 $.getJSON("xhr/check_login.php", function(data){
