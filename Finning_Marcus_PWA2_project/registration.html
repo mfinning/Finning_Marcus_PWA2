@@ -1,24 +1,14 @@
-<!doctype html>  
-
-
-
-<html lang="en">
+<!doctype html>
+<html>
 <head>
+<meta charset="UTF-8">
+<title>The Cave Reg</title>
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
-	<title>Your Registration page</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
-	
-	<!--  Mobile viewport optimized: j.mp/bplateviewport -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
 	<!-- CSS concatenated and minified via ant build script-->
 	<link rel="stylesheet" href="css/style.css?v=1">
+    <link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.css">
+    <link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css">
 	<!-- end CSS-->
-	
 </head>
 
 
@@ -39,35 +29,39 @@ Why join the cave is free it fun and you get up to 20GB of free storage
     
       <!-- registration form -->
 <div class="regform">
-<form>
-
 <h1>Registration :</h1>
-<label>
-<span>First Name</span><input id="firstName" type="text" name="name" />
-</label>
-<label>
-<span>Last Name</span><input id="last" type="text" name="last" />
-</label>
 
-<label>
-<span>Username</span><input id="user" type="text" name="user" />
-</label>
+  
+    <label for="fist-name">First Name</label><br>
+    <input id="first" type="text" name="first-name"
+    placeholder="Enter your fist name"><br>
+    <label for="last-name">Last Name</label><br>
+    <input id="last" type="text" name="last-name"
+    placeholder="Enter you last name"><br>
+    <label for="user-name">User Name</label><br>
+    <input id="userName" type="text" name="user-name"
+    placeholder="Enter a user name"><br>
+    <label for="email"> Email Address</label><br>
+    <input id="email" type="email" name="email"
+    placeholder="Enter a email Address" required><br>
+    <label for="confirm">Confirm Email address</label><br>
+    <input type="email" name="confirm" 
+    placeholder="Confirm your email" required><br>
+    <label for="password">password</label><br>
+    <input id="password" type="password" name="password"
+    placeholder="Enter a password" required><br>
+    <label for="pass-confirm">confirm</label><br>
+    <input type="password" name="pass-confirm"
+    placeholder="Confirm password" required><br>
+    
+    <br>
+    <input type="checkbox" required>
+   <p> I agree to the<a href="#">terms of The Cave</a></p>
+  <p>
+    <input type="button"  id="register" value="Submit">
+</p>
 
-<label>
-<span>Password</span><input id="pass" type="text" name="pass" />
-</label>
-<label>
-<span>Confirm Password</span><input id="cpass" type="text" name="cpass" />
-</label>
-<label>
-<span>Email Address</span><input id="email" type="text" name="email" />
-</label>
-</label>
-<input type="checkbox" required>
-<p> I agree to the<a href="#">terms</a>of The Cave</p>
-<input type="button"  id="register" value="Join us" />
-</form>
-	</div> 
+</div> a
 
 <div>
 <footer id="footer" 
@@ -79,12 +73,14 @@ Why join the cave is free it fun and you get up to 20GB of free storage
 	
 	<!-- jquery -->
     
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<!-- plugins -->
 
 	
 	<!-- main -->
-<script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
   
 </body>
 </html>

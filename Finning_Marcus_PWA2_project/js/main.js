@@ -81,7 +81,7 @@
 			var projName = $('#projectName').val(),
 			projDesc = $('#projectDescription').val(),
 			projDue = $('#projectDuedate').val(),
-			status = $('input[name= "status"] : checked').prop("id");
+			status = $('input[name= "status"]:checked').prop("id");
 			
 			$.ajax({
 				url: "xhr/new_project.php",
@@ -181,11 +181,7 @@
 		.css({ top: mousey, left: mousex})
 	});
 	
-	/*============== admin button ============================================*/
-	    $('.dashBoard').on('click',function(e){
-		e.preventDefault();
-		window.location.assign('admin.html');
-		});
+	
 	/*======================== tab according function ========================*/
 	
 	
@@ -202,38 +198,48 @@
 		$('#tabs ' + clicked).fadeIn("fast");
 	}).eq(0).addClass('current');
 	
+	/*============== Date picker =================*/
+	$( "#projectDuedate" ).datepicker();
+	
 	/*============= project buttion ==============*/
-	$('.innercavebtn').on('click',function(e){
+	$('#cavetaskbtn').on('click',function(e){
 		e.preventDefault();
 		window.location.assign('projects.html');
 	
 	});
 	
 	/*============= task button ===========*/
-	$('.cavetaskbtn').on('click',function(e){
+	$('#cavetaskbtn').on('click',function(e){
 		e.preventDefault();
 		window.location.assign('projects.html');
 		
 	});
 	
 	/*============== user button ============*/
-	$('.caveuserbtn').on('click',function(e){
+	$('#caveuserbtn').on('click',function(e){
 		e.preventDefault();
 		window.location.assign('admin.html');
 		
 	});
 	
 	/*========= registration page button ==========*/
-	$('.regBtn').on('click',function(e){
+	$('#regBtn').on('click',function(e){
 		e.preventDefault();
 		window.location.assign('registration.html');
 	});
+	
+	/*============== admin button ============================================*/
+	    $('#innercavebtn').on('click',function(e){
+		e.preventDefault();
+		window.location.assign('admin.html');
+		});
+		
 	 /*============= dynamic name ===========*/
 	 $.getJSON("xhr/check_login.php", function(data){
 		 console.log(data);
 		 $.each(data, function(key,val){
 			 console.log(val.first_name);
-			 $(".userid").html("welcome user: " + val.first_name);
+			 $("#users").html("welcome user: " + val.first_name);
 		 })
 	 });
 
@@ -242,7 +248,7 @@
 		/*================== registration form ===============*/
 	
 	$('#register').on('click' , function(){
-		var firstname= $('#firstName').val(),
+		var firstname= $('#first').val(),
 			lastname= $('#last').val(),
 			username= $('#user').val(),
 			email   = $('#email').val(),
@@ -251,14 +257,14 @@
 			
 	$.ajax({
 		url:'xhr/register.php',
-		type:'POST',
+		type:'post',
 		dataType:'json',
 		data:{
 			firstname: firstname,
 			lastname: lastname,
 			username: username,
 			email: email,
-			password: password,
+			password: password
 		},
 		
 		success: function(response){

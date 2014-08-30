@@ -2,12 +2,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>The Cave Project</title>
 </head>
 
 <body>
 	<!-- CSS concatenated and minified via ant build script-->
 	<link rel="stylesheet" href="css/style.css?v=1">
+    <link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.css">
+    <link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css">
 	<!-- end CSS-->
 	
 </head>
@@ -57,7 +59,7 @@
             <input name="projectDescription"type="text" id="projectDescription"/>
             <br>
             <label>project Duedate:</label>
-            <input name="projectDuedate"type="text" id="projectDuedate"/>
+            <input name="projectDuedate"type="text" id="projectDuedate" class="datePicker"/>
             <br>
             <label for="status">select status:</label>
  			<br>
@@ -129,7 +131,10 @@
 
 	
 	<!-- main -->
+<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+
 
 </body>
 </html>
