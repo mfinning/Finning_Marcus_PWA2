@@ -247,7 +247,7 @@
 		
 		/*================== registration form ===============*/
 	
-	$('.').on('click' , function(){
+	$('#register').on('click' , function(){
 		var firstname= $('#first').val(),
 			lastname= $('#last').val(),
 			username= $('#user').val(),
