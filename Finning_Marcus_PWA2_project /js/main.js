@@ -223,7 +223,7 @@
 	});
 	
 	/*========= registration page button ==========*/
-	$('#regBtn').on('click',function(e){
+	$('.regform').on('click',function(e){
 		e.preventDefault();
 		window.location.assign('registration.html');
 	});
